@@ -1,0 +1,104 @@
+*{
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+header {
+  background: linear-gradient(90deg,#6a0dad,#9b30ff);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.banner {
+  position: relative;
+  height: 250px;
+  background: url('https://img.criativodahora.com.br/2024/05/criativo-664aafed661a2img-2024-05-19664aafed661a4.jpg') center/cover;
+}
+
+.overlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+}
+
+.banner-content{
+  position:absolute;
+  width:100%;
+  top:50%;
+  transform:translateY(-50%);
+  text-align:center;
+  color:white;
+}
+
+.container{
+  padding:20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:15px;
+}
+
+.card{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  text-align:center;
+  padding-bottom:10px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+}
+
+.card h3{
+  margin:10px 0 5px;
+}
+
+.card p{
+  color:#6a0dad;
+  font-weight:bold;
+}
+
+.total-box{
+  text-align:center;
+  margin-top:20px;
+  font-size:22px;
+  color:#6a0dad;
+  font-weight:bold;
+}
+
+.order-btn{
+  width:100%;
+  padding:15px;
+  margin-top:20px;
+  border:none;
+  border-radius:10px;
+  background:#25D366;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.order-btn:hover{
+  background:#1ebe5d;
+}
